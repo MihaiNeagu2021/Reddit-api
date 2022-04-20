@@ -1,0 +1,5 @@
+<div id="post-card">
+    <a id="title" href = "https://www.reddit.com/{{link}}" target="blank" >{{title}}</a>
+    <img *ngIf="thumbnail !== 'spoiler' && thumbnail !== 'self'" [src]="thumbnail">
+    <p id="subRedit">Subreddit:  {{subreddit}}</p>
+</div>

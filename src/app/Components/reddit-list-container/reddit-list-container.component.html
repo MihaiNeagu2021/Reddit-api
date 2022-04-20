@@ -1,0 +1,12 @@
+<h1 id="title">Reddit posts</h1>
+<div>
+    <label for="search">Search Subreddit</label>
+    <input type="text" id="search" [(ngModel)]="currentSearchValue">
+    <button class="searchButton" (click)="getPosts()">Search</button>
+</div>
+<div id="grid">
+    <div *ngFor="let post of posts">
+        <app-reddit-list-item [title]="post.data.title" [thumbnail]="post.data.thumbnail"
+            [subreddit]="post.data.subreddit_name_prefixed" [link]="post.data.permalink"></app-reddit-list-item>
+    </div>
+</div>

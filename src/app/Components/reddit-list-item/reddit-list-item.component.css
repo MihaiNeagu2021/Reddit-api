@@ -1,0 +1,30 @@
+#title{
+    text-decoration: none;
+    font-size: 27px;
+    color: black;
+    text-align: center;
+    margin: 5px;
+    transition: 200ms;
+}
+
+#title:hover{
+    color: rgb(79, 79, 79);
+}
+#post-card{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: auto;
+    margin: 40px 20px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgb(87, 87, 87);
+}
+
+#post-card:hover{
+    box-shadow: 0px 0px 25px rgb(124, 164, 177); 
+}
+#subRedit{
+    font-size: 15px;
+    font-weight: bold;
+}

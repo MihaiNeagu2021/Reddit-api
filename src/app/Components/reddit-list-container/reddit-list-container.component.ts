@@ -38,7 +38,7 @@ export class RedditListContainerComponent implements OnInit {
   // and also gets the AFTER property value from the request and uses it in the next request to load additional related posts
   //  on init if there is no search value we load the posts from the if statement with the "aww" query;
   // if there is a search value, we load the posts from the else statement
-  // I had to make a clumsy setTimeout because I had to click the search button twice in order to update the page, and I couldn't find a better solution in time :D
+  // I had to make a clumsy setTimeout because I had to click the search button twice in order to update the page, and I couldn't find a better solution in time
   getPosts() {
     if (this.currentSearchValue === '') {
       this.redditApi.getPosts('aww').subscribe((data) => {
@@ -65,7 +65,7 @@ export class RedditListContainerComponent implements OnInit {
           });
           this.redditApi.after = responseData.data.after;
         });
-      }, 1000);
+      }, 500);
     }
   }
 }

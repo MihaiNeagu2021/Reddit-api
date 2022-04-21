@@ -7,9 +7,11 @@ import {  RedditResponse } from '../Types/types';
   providedIn: 'root',
 })
 export class RedditApiService {
-  @Input() after: string = '';
-
-  constructor(private http: HttpClient) {}
+  @Input() after: string='';
+  
+  
+  constructor(private http: HttpClient) {
+  }
 
   //  the method makes the initial request without the AFTER parameter
   //  and on the next requests it uses the AFTER property value from the previous request
